@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Example Suite">
+    <parameter name="cucumber.filter.tags" value="@Validateslides"/>
+   <!----> 
+    <test name="Test1" preserve-order="true">
+        <parameter name="cucumber.features" value="src/test/resources/features"/>
+        <parameter name="cucumber.glue" value="org.derived.product1.stepDefinition"/>
+        <classes>
+            <class name="org.derived.product1.runners.cucumberOptions"/>
+        </classes>
+    </test>
+</suite>
